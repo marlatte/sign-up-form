@@ -182,6 +182,8 @@ form {
 button.sign-up {
 	padding: 0.75rem;
 	margin-top: 0.5rem;
+	-webkit-appearance: none;
+	appearance: none;
 
 	font-family: var(--main-font), var(--backup-fonts);
 	font-size: 1rem;
@@ -196,15 +198,15 @@ button.sign-up {
 }
 
 	button.sign-up:hover {
-	background-color: #af45cc;
-	box-shadow: 0 0 5px hsl(210, 9%, 70%), inset 0 0 5px #7e3893;
-	color: white;
+		background-color: #af45cc;
+		box-shadow: 0 0 5px hsl(210, 9%, 70%), inset 0 0 5px #7e3893;
+		color: white;
 	}
 
 	button.sign-up:active {
-	background-color: #9938b4;
-	box-shadow: inset 0 0 5px #411a4d;
-	color: rgb(248, 245, 249);
+		background-color: #9938b4;
+		box-shadow: inset 0 0 5px #411a4d;
+		color: rgb(248, 245, 249);
 	}
 
 #already-user {
