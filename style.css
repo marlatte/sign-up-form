@@ -13,6 +13,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: unset;
 }
 
 body {
@@ -190,6 +191,7 @@ button.sign-up {
 	border: none;
 	border-radius: 5px;
 	background-color: #f0cafb;
+	color: #000;
 	box-shadow: 0 0 5px hsl(210, 10%, 80%);
 }
 
