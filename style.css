@@ -18,6 +18,7 @@
 
 body {
 	min-height: 100vh;
+	background-color: #dabdf5;
 	background-image: url(./images/nathan-hurst-BgBTv96kEW0-unsplash-small.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -32,12 +33,13 @@ header {
 	width: 100%;
 	position: sticky;
 	top: 0;
-	padding-bottom: 0.2rem;
-	
+}
+
+header .grey-bg {
 	display: flex;
 	justify-content: center;
-
-	background-color: #55555580;
+	background-color: #3f3f3f80;
+	padding-bottom: 0.2rem;
 }
 
 header h1 {
@@ -48,7 +50,7 @@ header h1 {
 	border: 1px solid black;
 	border-radius: 5px;
 	padding: 5px 10px;
-	margin: 10px;
+	margin: 13px;
 
 	background-color: #fff;
 	box-shadow: 6px 4px #000;
@@ -56,6 +58,9 @@ header h1 {
 }
 
 main {
+	display: flex;
+	align-items: center;
+
 	width: 90%;
 	flex: 1;
 	padding: 1.2rem;
@@ -68,7 +73,6 @@ main {
 .content {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	gap: 1.5rem;
 }
 
@@ -180,7 +184,7 @@ form {
 	}
 
 button.sign-up {
-	padding: 0.75rem;
+	padding: 1rem 3rem;
 	margin-top: 0.5rem;
 	-webkit-appearance: none;
 	appearance: none;
@@ -226,3 +230,46 @@ button.sign-up {
 	#log-in:active {
 		color: hsl(90, 57%, 45%);
 	}
+
+
+
+/* Tablet
+@media only screen and (min-width: 600px) {
+	
+} */
+
+/* Desktop */
+@media only screen and (min-width: 900px) {
+	body {
+		background-image: linear-gradient(#dabdf5, #fcc6ee, #f4a4bb);
+		flex-direction: row;
+		align-items: stretch;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 460px;
+
+		background-image: url(./images/nathan-hurst-BgBTv96kEW0-unsplash-small.jpg);
+		background-size: cover;
+	}
+
+	header .grey-bg {
+		margin-bottom: calc(210px - 1vw);
+	}
+
+	header h1 {
+		margin: calc(10px + 1vw);
+		font-size: calc(1rem + 1vw);
+	}
+
+	main {
+		margin: 0;
+	}
+
+	button.sign-up {
+		align-self: flex-start;
+	}
+}
