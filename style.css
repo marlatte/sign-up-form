@@ -15,6 +15,8 @@
 body {
 	min-height: 100vh;
 	background-image: url(./images/nathan-hurst-BgBTv96kEW0-unsplash-small.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	font-family: var(--main-font), var(--backup-fonts);
 	
 	display: flex;
@@ -24,9 +26,12 @@ body {
 
 header {
 	width: 100%;
+	position: sticky;
+	top: 0;
+	padding-bottom: 0.2rem;
+	
 	display: flex;
 	justify-content: center;
-	margin-bottom: 1rem;
 
 	background-color: #55555580;
 }
@@ -34,6 +39,7 @@ header {
 header h1 {
 	font-family: futura-pt-bold;
 	font-style: normal;
+	font-size: 1.5rem;
 	
 	border: 1px solid black;
 	border-radius: 5px;
@@ -46,44 +52,132 @@ header h1 {
 }
 
 main {
-	/* padding: 1rem 2rem; */
-	width: 80%;
-	background-color: #f9fafb;
+	width: 90%;
 	flex: 1;
-}
-
-.main>* {
-	margin: 0 ;
+	padding: 1.2rem;
+	margin: 1rem;
+	
+	border-radius: 5px;
+	background-color: #f9fafb;
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	justify-content: center;
+	gap: 1.5rem;
 }
 
 .text {
-	padding: 1rem;
-	background-color: #fff;
+	font-family: var(--backup-fonts);
+	font-weight: 500;
 }
 
 .text p:not(:last-child) {
 	margin-bottom: 1rem;
 }
 
-form .elements {
+.underline {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 1rem;
 	padding: 1rem;
 	
 	background-color: #fff;
 	box-shadow: 2px 3px 10px gray;
+	border-radius: 3px;
 }
 
 .form-row {
 	width: 100%;
+	
 	display: flex;
+	justify-content: stretch;
 	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.form-item {
+	flex: auto;
+}
+
+.form-item label {
+	text-transform: uppercase;
+	color: #545454;
+	font-size: .75rem;
+	letter-spacing: 1px;
 }
 
 .form-item input{
 	width: 100%;
+	appearance: none;
+	-webkit-appearance: none;
+	padding: 6px 10px;
+	
+	font-size: 0.9rem;
+	font-family: var(--backup-fonts);
+	border: 1px solid lightgrey;
+	border-radius: 5px;
 }
+
+	.form-item input::placeholder {
+		color: #cecece;
+	}
+
+	.form-item input:hover {
+		box-shadow: 0 0 3px #c9c9c9;
+	}
+
+	.form-item input:focus,
+	.form-item input:focus-visible {
+		box-shadow: 0 0 5px #a9a9a9;
+	}
+
+button.sign-up {
+	padding: 0.75rem;
+	margin-top: 0.5rem;
+
+	font-family: var(--main-font), var(--backup-fonts);
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	border: none;
+	border-radius: 5px;
+	background-color: #f0cafb;
+	box-shadow: 0 0 5px hsl(210, 10%, 80%);
+}
+
+	button.sign-up:hover,
+	button.sign-up:focus,
+	button.sign-up:focus-visible {
+	background-color: #af45cc;
+	box-shadow: 0 0 5px hsl(210, 10%, 80%);
+	color: white;
+	}
+
+	button.sign-up:active {
+	background-color: #9938b4;
+	box-shadow: inset 0 0 5px #50215e;
+	color: white;
+	}
+
+#already-user {
+ font-size: 1.1rem;
+}
+
+#log-in {
+	text-decoration: none;
+	font-weight: bold;
+	color: #4e831a;
+}
+
+#log-in:hover {
+		color: hsl(90, 67%, 21%);
+	}
