@@ -25,12 +25,16 @@
 			</div>
 			<form id="sign-up"
 				  action="">
-				<h2>Let's do this!</h2>
+				<div class="form-header">
+					<h2>Let's do this!</h2>
+					<p id="require-notice">Required fields are marked <span>required</span></p>
+				</div>
 				<div class="form-row">
 					<div class="form-item">
 						<label for="first-name">First name</label>
 						<input type="text"
 							   id="first-name"
+							   class="required"
 							   placeholder="Thor">
 					</div>
 					<div class="form-item">
@@ -45,6 +49,7 @@
 						<label for="email">Email</label>
 						<input type="email"
 							   id="email"
+							   class="required"
 							   placeholder="thor.odinson@top.com">
 					</div>
 					<div class="form-item">
@@ -59,12 +64,14 @@
 						<label for="pwd-1">Password</label>
 						<input type="password"
 							   id="pwd-1"
+							   class="required"
 							   placeholder="Keep me secret">
 					</div>
 					<div class="form-item">
 						<label for="pwd-2">Confirm password</label>
 						<input type="password"
 							   id="pwd-2"
+							   class="required"
 							   placeholder="Make me match">
 					</div>
 				</div>
