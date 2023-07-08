@@ -17,3 +17,14 @@ function validateForms() {
 		submitButton.type = "submit";
 	}
 }
+
+password.addEventListener("blur", checkPwdMatch);
+passwordConfirm.addEventListener("blur", checkPwdMatch);
+
+function checkPwdMatch() {
+ if (password.value === passwordConfirm.value) {
+	passwordConfirm.setCustomValidity("");
+} else {
+	passwordConfirm.setCustomValidity("Passwords do not match.")
+ }
+}
