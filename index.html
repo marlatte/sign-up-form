@@ -7,6 +7,8 @@
 		  content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet"
 		  href="style.css">
+	<link rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Odin Sign Up</title>
 </head>
 
@@ -18,7 +20,8 @@
 		<div class="content">
 			<div class="text">
 				<p>Hello party people!</p>
-				<p>With party paradiso, anyone can find the perfect venue in minutes. List your apartment, your living room, or even  your boathouse on Mars and make some money in your sleep.</p>
+				<p>With party paradiso, anyone can find the perfect venue in minutes. List your apartment, your living
+					room, or even your boathouse on Mars and make some money in your sleep.</p>
 				<p>Sign up now to get started.</p>
 			</div>
 			<form action="">
@@ -34,6 +37,7 @@
 							   id="first-name"
 							   class="required"
 							   maxlength="20"
+							   autocomplete="given-name"
 							   placeholder="Thor">
 					</div>
 					<div class="form-item">
@@ -42,6 +46,7 @@
 							   name="last-name"
 							   id="last-name"
 							   maxlength="20"
+							   autocomplete="family-name"
 							   placeholder="Odinson">
 					</div>
 				</div>
@@ -52,7 +57,7 @@
 							   name="email"
 							   id="email"
 							   class="required"
-							   autocomplete
+							   autocomplete="email"
 							   placeholder="thor.odinson@top.com">
 					</div>
 					<div class="form-item">
@@ -61,6 +66,7 @@
 							   name="phone"
 							   id="phone"
 							   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+							   autocomplete="tel"
 							   placeholder="xxx-xxx-xxxx">
 					</div>
 				</div>
@@ -72,7 +78,7 @@
 							   id="pwd-1"
 							   class="required"
 							   maxlength="20"
-							   autocomplete
+							   autocomplete="new-password"
 							   placeholder="Keep me secret">
 					</div>
 					<div class="form-item">
@@ -82,7 +88,6 @@
 							   id="pwd-2"
 							   class="required"
 							   maxlength="20"
-							   autocomplete
 							   placeholder="Make me match">
 					</div>
 				</div>
@@ -90,10 +95,22 @@
 			<button type="button"
 					form="sign-up"
 					class="sign-up">Create Account</button>
-			<p id="already-user">Already have an account? 
-				<a href="#" id="log-in">Log in</a>
+			<p id="already-user">Already have an account?
+				<a href="#"
+				   id="log-in">Log in</a>
 			</p>
 		</div>
+		<footer>
+			<div class="attribution">
+				<div>&copy; 2023 <span id="my-name">Walker Marlatt</span></div>
+				<div>The Odin Project</div>
+			</div>
+			<a href="https://github.com/marlatte"
+			   target="_blank">
+				<i class="fa fa-github"
+				   style="font-size:34px"></i>
+			</a>
+		</footer>
 	</main>
 	<script src="script.js"></script>
 </body>
