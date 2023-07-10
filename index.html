@@ -30,14 +30,18 @@
 					<div class="form-item">
 						<label for="first-name">First name</label>
 						<input type="text"
+							   name="first-name"
 							   id="first-name"
 							   class="required"
+							   maxlength="20"
 							   placeholder="Thor">
 					</div>
 					<div class="form-item">
 						<label for="last-name">Last name</label>
 						<input type="text"
+							   name="last-name"
 							   id="last-name"
+							   maxlength="20"
 							   placeholder="Odinson">
 					</div>
 				</div>
@@ -45,14 +49,18 @@
 					<div class="form-item">
 						<label for="email">Email</label>
 						<input type="email"
+							   name="email"
 							   id="email"
 							   class="required"
+							   autocomplete
 							   placeholder="thor.odinson@top.com">
 					</div>
 					<div class="form-item">
 						<label for="phone">Phone number</label>
 						<input type="tel"
+							   name="phone"
 							   id="phone"
+							   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 							   placeholder="xxx-xxx-xxxx">
 					</div>
 				</div>
@@ -60,15 +68,21 @@
 					<div class="form-item">
 						<label for="pwd-1">Password</label>
 						<input type="password"
+							   name="pwd-1"
 							   id="pwd-1"
 							   class="required"
+							   maxlength="20"
+							   autocomplete
 							   placeholder="Keep me secret">
 					</div>
 					<div class="form-item">
 						<label for="pwd-2">Confirm password</label>
 						<input type="password"
+							   name="pwd-2"
 							   id="pwd-2"
 							   class="required"
+							   maxlength="20"
+							   autocomplete
 							   placeholder="Make me match">
 					</div>
 				</div>
